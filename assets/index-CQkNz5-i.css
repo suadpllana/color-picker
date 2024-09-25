@@ -1,0 +1,1 @@
+body{text-align:center;font-family:Arial,Helvetica,sans-serif}.result{height:250px;width:250px;margin-left:42%;border:1px solid black;display:flex;align-items:center;justify-content:center}h2{margin-top:2rem}input{width:200px}@media (max-width: 767px){.result{margin-left:15%}}

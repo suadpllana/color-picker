@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState , useEffect} from "react"
+import { MdDelete } from "react-icons/md";
 const Color = () => {
     const [color , setColor] = useState("");
 
@@ -29,6 +30,10 @@ const Color = () => {
         }
       ])
     }
+    function deleteColor(id){
+      const filteredColors = saveColor.filter((col) => col.id !== id)
+      setSaveColor(filteredColors)
+    }
 
   return (
     <div className="container">
@@ -39,6 +44,7 @@ const Color = () => {
         <div className="boxContainer"> 
      <p>{color.text}  </p>
      <div className="box" style={{backgroundColor: color.text}}></div>
+     <MdDelete onClick={() => deleteColor(color.id)} className="icon" />
         </div>
  
         ))}

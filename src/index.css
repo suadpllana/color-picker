@@ -95,11 +95,18 @@ gap: 300px;
   opacity: 0.6  ;
 }
 @media (max-width: 767px){
-  .result{
-    margin-left: 15%;
-  }
+
+  
   .container{
+    width: 100%;
+ 
     grid-template-columns: 1fr;
+  }
+  .colorPickerContainer{
+    align-items: center;
+  }
+  .eyeDropperBox{
+    margin-left: 128px;
   }
 }
 @media (min-width: 768px) and (max-width: 1217px){

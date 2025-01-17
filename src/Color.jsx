@@ -52,8 +52,8 @@ const Color = () => {
       
       <div className="savedColorContainer">
         {saveColor.length > 0 && <h2>Saved Colors :</h2>}
-       {saveColor.map((color) => (
-        <div className="boxContainer"> 
+       {saveColor.map((color , index) => (
+        <div key={index} className="boxContainer"> 
         <p>{color.text || color.eyeDropperSavedColor}  </p>
      <div className="box" style={{backgroundColor: color.text}}></div>
      <MdDelete onClick={() => deleteColor(color.id)} className="icon" />

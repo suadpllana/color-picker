@@ -20,6 +20,7 @@ const Color = () => {
 
 
     function pickColor(e){
+      setEyeDropperColor("")
         setColor(e.target.value)
         
     }

@@ -27,10 +27,17 @@ gap: 300px;
 .colorPickerContainer{
   text-align: center;
   display: flex;
-  justify-content: center;
+
   flex-direction: column;
 
 }
+.savedColorContainer {
+
+  max-height: 40rem; 
+  overflow-y: auto;  
+  width: 22rem;   
+}
+
 .eyeDropperBox{
   width: auto;
   max-width: 100px;
